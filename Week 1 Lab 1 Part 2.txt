@@ -1,0 +1,61 @@
+public class VariablesAndOperations {
+
+	public static void main(String[] args) {
+		//create a variable to hold the quantity of available plane seats left on a flight
+		int availableSeats = 12;
+		//create a variable to hold the cost of groceries at checkout
+		double groceryBill = 59.99;
+		//create a variable to hold a person's middle initial
+		char middleInitial = 'B';
+		//create a variable to hold true if it's hot outside and false if it's cold outside
+		boolean isHotOutside = true;
+		//create a variable to hold a customer's first name
+		String customerFirstName = "Gary";
+		//create a variable to hold a street address
+		String address = "99 Yacht Way";
+		//print all variables to the console
+		System.out.println("Seats available: " + availableSeats);
+		System.out.println("Grocery Bill: " + groceryBill);
+		System.out.println("Middle Initial: " + middleInitial);
+		System.out.println("It is hot outside. " + isHotOutside);
+		System.out.println("Customer First Name: " + customerFirstName);
+		System.out.println("Street Address: " + address);
+		
+		//a customer booked 2 plane seats, remove 2 seats from the available seats variable
+		availableSeats -= 2;
+		//impulse candy bar purchase, add 2.15 to the grocery total
+		groceryBill += 2.15;
+		//birth certificate was printed incorrectly, change the middle initial to something else
+		middleInitial = 'N';
+		
+		System.out.println("UPDATE! Seats available: " + availableSeats);
+		System.out.println("Total Grocery Bill: " + groceryBill);
+		System.out.println("Corrected Middle Initial: " + middleInitial);
+		
+		//the season has changed, update the hot outside variable to be opposite of what it was
+		isHotOutside = !isHotOutside;
+		System.out.println("It is hot outside. " + isHotOutside);
+		//create a new variable called full name using the customer's first name, the middle initial, and a last name of your choice
+		String lastName = "Terry";
+		String customerFullName = customerFirstName + " " + middleInitial + " " + lastName;
+		//print a line to the console that introduces the customer and says they live at the address variable
+		System.out.println("Hello, this is " + customerFullName + ". \nThis customer lives at:\n" + address);
+
+	}
+
+}
+
+Output:
+Seats available: 12
+Grocery Bill: 59.99
+Middle Initial: B
+It is hot outside. true
+Customer First Name: Gary
+Street Address: 99 Yacht Way
+UPDATE! Seats available: 10
+Total Grocery Bill: 62.14
+Corrected Middle Initial: N
+It is hot outside. false
+Hello, this is Gary N Terry. 
+This customer lives at:
+99 Yacht Way
