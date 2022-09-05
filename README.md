@@ -1,0 +1,1 @@
+This repository contains code written during class in response to Lab prompts as well as code copied basically word for word from modules in order to reinforce the keywords and methods with practice. For code fully written, troubleshooted, and produced by me: see the repository "Projects".
