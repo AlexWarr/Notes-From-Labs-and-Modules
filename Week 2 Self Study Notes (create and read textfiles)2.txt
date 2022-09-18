@@ -7,8 +7,13 @@ public class ImJuthTryin2Read {
 
 	public static void main(String[] args) throws IOException
 	{
-		
-		
+		/**see the following urls for where the different options were sourced from
+		*https://stackoverflow.com/questions/20141736/storing-multiple-strings-in-an-array-list
+		*https://stackoverflow.com/questions/19844649/java-read-file-and-store-text-in-an-array
+		*Nathan Shutz https://www.youtube.com/watch?v=YXpgcRa7_sg
+		*https://stackoverflow.com/questions/13185727/reading-a-txt-file-using-scanner-class-in-java
+		*https://stackoverflow.com/questions/28687148/file-not-found-in-same-folder-java
+		*https://www.w3schools.com/java/java_files_create.asp
 		System.out.println(new File(".").getAbsolutePath());
 		try {
 		      File myObj = new File("Plants.txt");
