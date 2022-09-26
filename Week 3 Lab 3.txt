@@ -1,0 +1,26 @@
+
+public class Week3LabP3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		sumOfDigits(234);
+
+	}
+	public static int sumOfDigits(int digits) {
+		// Write your code below
+		int temp0 = digits;
+		int answer = 0;
+		while (temp0 > 0) {
+		    int temp2 = (temp0)%10;
+		    System.out.println("temp2: " + temp2);
+		    answer+= temp2;
+		    System.out.println("answer: " + answer);
+		    temp0 /=10;
+		    System.out.println("Temp0: " + temp0);
+		    
+		}
+		System.out.println(answer);
+		return answer;
+	}
+
+}

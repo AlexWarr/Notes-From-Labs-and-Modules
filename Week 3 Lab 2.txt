@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Week3LabP2 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please type word:");
+		String uip = sc.nextLine();
+		if (palindrome(uip)) {
+			System.out.println(uip + " is a palindrome");
+		} else {
+			System.out.println(uip + " is not a palindrome");
+		}
+		
+	}
+	public static boolean palindrome(String word) {
+		int temp = word.length();
+		char[] z = word.toCharArray();
+		char a = '1';
+		char b = '1';
+		int i = 0;
+		boolean j = false;
+		while (i < (z.length/2)) {
+			a = z[i];
+			b = z[(z.length-1)-i];
+			if (a == b) {
+				i++;
+				j=true;
+			} else {
+				j=false;
+				break;
+			}
+		}
+		System.out.println(j);
+		return j;
+	}
+
+
+
+}
