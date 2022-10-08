@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		Scanner kb = new Scanner(System.in);
+		System.out.println("what is your name?");
+		String name = kb.next();
+		System.out.println("How much to deposit?");
+		double deposit = kb.nextDouble();
+		
+		
+		BankAccount acct1 = new BankAccount(); //constructor () purpose - to initialize global variables
+		
+		
+		BankAccount acct2 = new BankAccount(name, deposit);
+
+		
+		System.out.println(acct2.getName());
+		System.out.println(acct2.getBalance());
+		//System.out.println(acct1.name);
+		//System.out.println(acct1.balance);
+		//System.out.println(acct2.name);
+		//System.out.println(acct2.balance);
+		
+		acct2.setName("Xander");;
+		acct2.setBalance(1000);
+
+		System.out.println(acct2.getName());
+		System.out.println(acct2.getBalance());
+		
+		BusinessAccount acct3 = new BusinessAccount(name, deposit, 2.5);
+		
+	}
+		
+
+}
+
+

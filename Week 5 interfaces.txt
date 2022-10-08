@@ -1,0 +1,37 @@
+
+public interface driving {
+	public void revers();
+	public void neutral();
+	public void park();
+	public void drive();
+
+}
+
+
+public class DriveTester implements driving {
+
+
+	public void revers() {
+
+
+	}
+
+
+	public void neutral() {
+
+
+	}
+
+
+	public void park() {
+
+
+	}
+
+
+	public void drive() {
+
+
+	}
+
+}

@@ -1,0 +1,77 @@
+
+public class BankAccount {
+	//global variables !!!Should BE PRIVATE!!!
+	private String name;
+	private double balance;
+	
+	//default constructor
+	public BankAccount() {
+		//constructor is special method to initialize global assets
+		name = "";
+		balance = 0.0;
+	}
+	//overloading
+	public BankAccount(String name, double balance) {
+		this.name = name;
+		this.balance = balance;
+	}
+	
+	public String toString() {
+		return "Name: " + getName() + " , Balance: " + getBalance();
+	}
+	
+
+	//accessor methods "getters"
+	public String getName() { return name; }
+	public double getBalance() { return balance; }
+	
+	//mutator methods "setters"
+	public void setName(String name) { 
+		this.name = name; 
+		}
+	public void setBalance(double balance) {
+		this.balance = balance; 
+		}
+	
+	//withdraw or deposit
+	public void deposit(double deposit) {
+		balance += deposit;
+	}
+	public void withdraw(double withdraw) {
+		if (withdraw > balance) {
+			System.out.println("Insufficient funds!");
+		} else {
+			balance -= withdraw;
+		}
+		}
+		balance -= w;
+	}
+
+	
+	
+	//public static void main(String[] args) {
+
+
+
+	//}
+
+}
+// the sub class inherits from the super class
+class BusinessAccount extends BankAccount{
+	double interest;
+	public BusinessAccount(String name, double balance, double interest) {
+		super(name, balance);
+		this.interest = interest;
+	}
+	public double getInterest() {
+		return interest;
+	}
+	public void setInterest(double interest) {
+		this.interest = interest;
+	}
+	//method overwriting
+	public void deposit(double deposit) {
+		setBalance(getBalance() + (deposit*interest));
+	}
+	
+}
